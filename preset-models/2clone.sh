@@ -1,7 +1,7 @@
 #!/bin/sh
 # 下载源码
 # git clone -b master --single-branch https://github.com/Lienol/openwrt
-git clone -b master --single-branch https://github.com/coolsnowwolf/lede
+git clone -b master --single-branch https://github.com/coolsnowwolf/lede openwrt
 mv ./openwrt/* ./
 
 # 下载自定义插件
