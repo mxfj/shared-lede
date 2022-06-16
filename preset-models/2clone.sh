@@ -5,10 +5,6 @@ git clone -b master --single-branch https://github.com/coolsnowwolf/lede
 mv ./openwrt/* ./
 
 # 下载自定义插件
-cd package/lean
-rm -rf luci-theme-argon
-git clone https://github.com/jerrykuku/luci-theme-argon.git
-cd ../..
 mkdir -p package/myapps
 cd package/myapps
 git clone https://github.com/jerrykuku/luci-theme-argon.git
