@@ -100,8 +100,6 @@ jobs:
       - name: 修改配置
         run: |
           [ ${{ github.event.inputs.kernel_5_15 }} == true ] && sed -i '/KERNEL_PATCHVER:=5.15/ s/#//' $MODIFY_SH
-          chmod +x $MODIFY_SH
-          $MODIFY_SH
       - name: 生成.config文件
         run: |
           mv -f $CONFIG_PA ./.config
